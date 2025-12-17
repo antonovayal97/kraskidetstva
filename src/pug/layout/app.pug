@@ -1,0 +1,23 @@
+include ../chunk/components/icon
+
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=no")
+    meta(name="robots" content="noindex, nofollow")
+    title 
+      block title
+    link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css")
+    link(rel="stylesheet", href="./libs/hystmodal.min.css")
+    link(rel="stylesheet", href="./css/main.min.css")
+    block styles
+  body
+    block page
+    block script
+    script(src="https://api-maps.yandex.ru/2.1/?apikey=f52a5ff7-c6d3-42f8-b08d-92e4954d6a75&lang=ru_RU")
+    script(src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js")
+    script(src="https://unpkg.com/imask")
+    script(src="./libs/hystmodal.min.js")
+    script(src="js/common.js")

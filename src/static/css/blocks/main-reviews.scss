@@ -1,0 +1,55 @@
+@import "../service/media-mixin.scss";
+
+.main-reviews {
+  position: relative;
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+  @include max-lg {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  &__title {
+    margin-bottom: 4rem;
+    @include max-lg {
+      margin-bottom: 2rem;
+    }
+    h2 {
+      color: #fff;
+    }
+  }
+  &__widget {
+  }
+  &__image {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100vw;
+    height: 100%;
+    @include max-lg {
+      display: none;
+    }
+    &-mobile {
+      display: none;
+      @include max-lg {
+        display: block;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 100vw;
+        height: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

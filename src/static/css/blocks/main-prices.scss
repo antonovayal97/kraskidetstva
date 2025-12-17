@@ -1,0 +1,149 @@
+@import "../service/media-mixin.scss";
+
+.main-prices {
+  padding-top: 7.5rem;
+  padding-bottom: 4rem;
+  @include max-lg {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  &__title {
+    margin-bottom: 6.25rem;
+    @include max-lg {
+      margin-bottom: 2.5rem;
+    }
+  }
+  &__cards {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 3.125rem;
+    @include max-lg {
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+  &__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
+    width: 34.5rem;
+    border-radius: 4rem;
+    padding: 2rem 3rem;
+    background-color: #c8ff70;
+    overflow: hidden;
+    @include max-lg {
+      width: 100%;
+      border-radius: 3rem;
+      padding: 1.5rem 1.75rem;
+      gap: 3.5rem;
+    }
+    &--center {
+      background-color: #98e51c;
+      gap: 7.125rem;
+      @include max-lg {
+        gap: 3.5rem;
+      }
+    }
+    &-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      @include max-lg {
+        height: 83%;
+        top: 2rem;
+        left: -1rem;
+        width: 175%;
+        img {
+          height: 133%;
+          width: 150%;
+        }
+      }
+    }
+    &-top {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    &-title {
+      font-family: "TikTok", sans-serif;
+      font-weight: 950;
+      font-size: 3rem;
+      line-height: 2.875rem;
+      letter-spacing: -0.03em;
+      color: #1d1d20;
+      @include max-lg {
+        font-size: 1.75rem;
+        line-height: 1.6625rem;
+      }
+    }
+    &-description {
+      font-family: "Golos", sans-serif;
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 1.25rem;
+      color: #1d1d20;
+    }
+    &-prices {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      @include max-lg {
+        gap: 2rem;
+      }
+    }
+    &-price {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      &-name {
+        font-family: "TikTok", sans-serif;
+        font-weight: 730;
+        font-size: 2.5rem;
+        line-height: 2.375rem;
+        letter-spacing: -0.03em;
+        color: #1d1d20;
+        @include max-lg {
+          font-weight: 630;
+          font-size: 2.25rem;
+          line-height: 2.16rem;
+        }
+      }
+      &-value {
+        font-family: "TikTok", sans-serif;
+        font-weight: 950;
+        font-size: 4rem;
+        line-height: 4rem;
+        text-transform: uppercase;
+        color: #1d1d20;
+        @include max-lg {
+          font-size: 3rem;
+          line-height: 2.85rem;
+        }
+      }
+    }
+    &-button {
+      position: relative;
+      z-index: 1;
+      .button {
+        width: 100%;
+      }
+    }
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+    @include max-lg {
+      .button {
+        width: 100%;
+      }
+    }
+  }
+}

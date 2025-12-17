@@ -1,0 +1,26 @@
+extends ../layout/app
+block title
+  | Главная
+block styles
+  link(rel="stylesheet", href="./css/blocks/main-banner.min.css")
+  link(rel="stylesheet", href="./css/blocks/main-park.min.css")
+  link(rel="stylesheet", href="./css/blocks/main-bday.min.css")
+  link(rel="stylesheet", href="./css/blocks/main-menu.min.css")
+  link(rel="stylesheet", href="./css/blocks/main-uslugi.min.css")
+  link(rel="stylesheet", href="./css/blocks/main-prices.min.css")
+  link(rel="stylesheet", href="./css/blocks/main-reviews.min.css")
+  link(rel="stylesheet", href="./css/blocks/main-contacts.min.css")
+block script
+  script(src="js/mainBanner.js")
+block page
+  include ../chunk/header
+  main
+    include ../blocks/main-banner
+    include ../blocks/main-park
+    include ../blocks/main-bday
+    include ../blocks/main-menu
+    include ../blocks/main-uslugi
+    include ../blocks/main-prices
+    include ../blocks/main-reviews
+    include ../blocks/main-contacts
+  include ../chunk/footer

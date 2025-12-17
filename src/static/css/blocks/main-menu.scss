@@ -1,0 +1,73 @@
+@import "../service/media-mixin.scss";
+
+.main-menu {
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+  @include max-lg {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  &__title {
+    margin-bottom: 3.75rem;
+    @include max-lg {
+      margin-bottom: 2rem;
+    }
+  }
+  &__tabs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    @include max-lg {
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+  &__tab {
+    padding: 1rem;
+    border-radius: 1.5rem;
+    background-color: #e6e6e6;
+    font-family: "Golos", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    color: #1d1d20;
+    @include max-lg {
+      padding: 0.5rem 0.75rem;
+      font-size: 1rem;
+      line-height: 1.25rem;
+    }
+    &--active {
+      background-color: #98e51c;
+    }
+  }
+  &__slides {
+    margin: 0 -7rem;
+    @include max-lg {
+      margin: 0 -1rem;
+    }
+  }
+  &__slide {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    &--active {
+      display: block;
+      visibility: visible;
+      opacity: 1;
+    }
+    .swiper-slide {
+      width: auto;
+      line-height: 0;
+    }
+    img {
+      border-radius: 4rem;
+      width: 46.125rem;
+      height: 35rem;
+      @include max-lg {
+        border-radius: 1.5rem;
+        width: 15rem;
+        height: 9.875rem;
+      }
+    }
+  }
+}
