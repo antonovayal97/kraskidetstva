@@ -1,6 +1,6 @@
 extends ../layout/app
 block title
-  | Главная
+  | День рождения
 block styles
   link(rel="stylesheet", href="./css/blocks/main-banner.min.css")
   link(rel="stylesheet", href="./css/blocks/main-park.min.css")
@@ -10,16 +10,22 @@ block styles
   link(rel="stylesheet", href="./css/blocks/main-prices.min.css")
   link(rel="stylesheet", href="./css/blocks/main-reviews.min.css")
   link(rel="stylesheet", href="./css/blocks/main-contacts.min.css")
+  link(rel="stylesheet", href="./css/blocks/b-day-banner.min.css")
+  link(rel="stylesheet", href="./css/blocks/b-day-park.min.css")
+  link(rel="stylesheet", href="./css/blocks/b-day-tema-room.min.css")
+  link(rel="stylesheet", href="./css/blocks/b-day-gives.min.css")
+  link(rel="stylesheet", href="./css/blocks/faq.min.css")
+  link(rel="stylesheet", href="./css/blocks/b-day-form.min.css")
 block script
 block page
   include ../chunk/header
   main
-    include ../blocks/main-banner
-    include ../blocks/main-park
-    include ../blocks/main-bday
-    include ../blocks/main-menu
-    include ../blocks/main-uslugi
-    include ../blocks/main-prices
-    include ../blocks/main-reviews
+    include ../blocks/b-day-banner
+    include ../blocks/b-day-park
+    include ../blocks/b-day-tema-room
+    include ../blocks/b-day-gives
+    include ../blocks/b-day-prices
+    include ../blocks/b-day-form
     include ../blocks/main-contacts
+    include ../blocks/faq
   include ../chunk/footer
