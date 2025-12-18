@@ -1,0 +1,53 @@
+.b-day-kafe.c-container
+    .c-title.b-day-kafe__title
+        h2 Кафе
+    .c-description
+        p В меню кафе Краски Детства большой выбор блюд, которые понравятся и детям, и взрослым.
+        p Для детей мы собрали позиции домашней кухни, например, мамины котлетки с пюре, овощные палочки, морсы, а также вкусный и любимый фастфуд: картофель фри, наггетсы, бургеры, пиццу.
+        p А для взрослых – европейская, американская, русская кухни. Вы можете заказать то, что уже вам знакомо или попробовать что-то новое и необычное.
+        p Все блюда в кафе Краски Детства готовятся из свежих и натуральных продуктов
+    .main-menu__tabs
+        button.main-menu__tab.main-menu__tab--active Еда
+        button.main-menu__tab Десерты
+        button.main-menu__tab Напитки
+        .c-title__arrows
+            button.c-title__arrow.c-title__arrow--prev
+                +icon("slide-arrow")
+            button.c-title__arrow.c-title__arrow--next
+                +icon("slide-arrow")
+    .main-menu__slides
+        .swiper.main-menu__slide.main-menu__slide--active
+            .swiper-wrapper
+                .swiper-slide
+                    img(src="./img/main-menu-1.webp", alt="")
+                .swiper-slide
+                    img(src="./img/main-menu-2.webp", alt="")
+                .swiper-slide
+                    img(src="./img/main-menu-1.webp", alt="")
+                .swiper-slide
+                    img(src="./img/main-menu-2.webp", alt="")
+            .swiper-pagination
+        .swiper.main-menu__slide
+            .swiper-wrapper
+                .swiper-slide
+                    img(src="./img/main-menu-1.webp", alt="")
+                .swiper-slide
+                    img(src="./img/main-menu-2.webp", alt="")
+                .swiper-slide
+                    img(src="./img/main-menu-1.webp", alt="")
+                .swiper-slide
+                    img(src="./img/main-menu-2.webp", alt="")
+            .swiper-pagination
+        .swiper.main-menu__slide
+            .swiper-wrapper
+                .swiper-slide
+                    img(src="./img/main-menu-1.webp", alt="")
+                .swiper-slide
+                    img(src="./img/main-menu-2.webp", alt="")
+                .swiper-slide
+                    img(src="./img/main-menu-1.webp", alt="")
+                .swiper-slide
+                    img(src="./img/main-menu-2.webp", alt="")
+            .swiper-pagination
+    .b-day-kafe__bg
+        img(src="./img/b-day-kafe__bg.webp", alt="alt")

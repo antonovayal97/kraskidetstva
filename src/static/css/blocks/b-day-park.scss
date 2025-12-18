@@ -1,10 +1,29 @@
+@import "../service/media-mixin.scss";
+
 .b-day-park {
   padding: 6.25rem 0;
+  @include max-lg {
+    padding: 2rem 0;
+  }
   &__title {
     margin-bottom: 3.75rem;
+    @include max-lg {
+      margin-bottom: 2rem;
+      h2 {
+        font-family: "TikTok", sans-serif;
+        font-weight: 530;
+        font-size: 2.75rem;
+        line-height: 2.3925rem;
+        letter-spacing: -0.05em;
+        color: #1d1d20;
+      }
+    }
   }
   &__slide {
     margin: 0 -7.5rem;
+    @include max-lg {
+      margin: 0 -1rem;
+    }
     .swiper-slide {
       width: auto;
     }
@@ -15,6 +34,12 @@
     width: 105rem;
     height: 54.6875rem;
     margin-bottom: 7.5rem;
+    @include max-lg {
+      width: 21.4375rem;
+      height: 15.3125rem;
+      padding: 1rem;
+      margin-bottom: 4.5rem;
+    }
     &-title {
       font-family: "TikTok", sans-serif;
       font-weight: 950;
@@ -24,6 +49,12 @@
       text-transform: uppercase;
       color: #1d1d20;
       margin-bottom: 3.0625rem;
+      @include max-lg {
+        font-size: 1.25rem;
+        line-height: 1.25rem;
+        letter-spacing: -0.05em;
+        margin-bottom: 1.5rem;
+      }
     }
     &-description {
       width: 50.875rem;
@@ -32,10 +63,23 @@
       font-size: 2.25rem;
       line-height: 2.4975rem;
       color: #1d1d20;
+      @include max-lg {
+        font-size: 1rem;
+        line-height: 1.25rem;
+        width: 100%;
+      }
     }
     &-images {
+      position: absolute;
+      bottom: -2.5rem;
       display: flex;
-      margin-top: 5.375rem;
+      margin-left: -0.75rem;
+      margin-right: -0.75rem;
+      @include max-lg {
+        margin-left: -0.1875rem;
+        margin-right: -0.1875rem;
+        bottom: -3rem;
+      }
     }
     &-image {
       position: relative;
@@ -44,6 +88,11 @@
       height: 34.875rem;
       border-radius: 4rem;
       overflow: hidden;
+      @include max-lg {
+        border-radius: 2rem;
+        width: 7.75rem;
+        height: 7rem;
+      }
       &-1 {
         transform: rotate(5deg);
       }
@@ -52,9 +101,17 @@
         margin-right: -11.875rem;
         transform: translateY(-3.875rem) rotate(-6deg);
         z-index: 1;
+        @include max-lg {
+          margin-left: -0.625rem;
+          margin-right: -2.3125rem;
+          transform: translateY(-0.78125rem) rotate(-6deg);
+        }
       }
       &-3 {
         transform: translateY(3.5625rem) rotate(5deg);
+        @include max-lg {
+          transform: translateY(0.71875rem) rotate(5deg);
+        }
       }
       img {
         width: 100%;
@@ -68,6 +125,26 @@
       left: 0;
       width: 100%;
       z-index: -1;
+      img {
+        width: 100%;
+      }
+      @include max-lg {
+        display: none;
+      }
+      &-mobile {
+        display: none;
+        img {
+          width: 100%;
+        }
+        @include max-lg {
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          z-index: -1;
+        }
+      }
     }
   }
 }

@@ -1,0 +1,27 @@
+@import "../service/media-mixin.scss";
+
+.b-day-kafe {
+  position: relative;
+  padding: 5.5rem 0;
+  &__title {
+    margin-bottom: 2rem;
+  }
+  .c-description {
+    margin-bottom: 3.5rem;
+  }
+  .c-title__arrows {
+    margin-left: auto;
+  }
+  &__bg {
+    position: absolute;
+    top: -2rem;
+    right: -7.5rem;
+    width: 51.375rem;
+    height: 57.3125rem;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

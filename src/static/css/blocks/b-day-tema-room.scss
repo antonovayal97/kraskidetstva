@@ -1,10 +1,26 @@
+@import "../service/media-mixin.scss";
+
 .b-day-tema-room {
   position: relative;
   padding: 6.25rem 0;
+  @include max-lg {
+    padding: 2rem 0;
+  }
   &__title {
     margin-bottom: 2rem;
+    @include max-lg {
+      margin-bottom: 1rem;
+    }
     h2 {
       color: #fff;
+      @include max-lg {
+        font-family: "TikTok", sans-serif;
+        font-weight: 400;
+        font-size: 2.75rem;
+        line-height: 2.64rem;
+        letter-spacing: -0.03em;
+        color: #fff;
+      }
     }
   }
   &__description {
@@ -15,16 +31,32 @@
     color: #fff;
     margin-bottom: 2rem;
     width: 62.5rem;
+    @include max-lg {
+      width: 100%;
+      margin-bottom: 1.5rem;
+      font-family: "Golos", sans-serif;
+      font-weight: 400;
+      font-size: 0.875rem;
+      line-height: 1.12875rem;
+      color: #fff;
+    }
   }
   &__images {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+    @include max-lg {
+      gap: 0.5rem;
+    }
   }
   &__image {
     height: 37.5rem;
     border-radius: 4rem;
     overflow: hidden;
+    @include max-lg {
+      border-radius: 1.5rem;
+      height: 7.5rem;
+    }
     img {
       width: 100%;
       height: 100%;
@@ -37,5 +69,26 @@
     transform: translate(-50%, -50%);
     width: 100%;
     z-index: -1;
+    img {
+      width: 100%;
+    }
+    @include max-lg {
+      display: none;
+    }
+    &-mobile {
+      display: none;
+      position: absolute;
+      top: 51%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      z-index: -1;
+      img {
+        width: 100%;
+      }
+      @include max-lg {
+        display: block;
+      }
+    }
   }
 }

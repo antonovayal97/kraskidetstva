@@ -85,15 +85,25 @@ body {
 
 .c-description {
   width: 62.5rem;
+  @include max-lg {
+    width: 100%;
+  }
   * {
     font-family: "Golos", sans-serif;
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 1.755rem;
     color: #1d1d20;
+    @include max-lg {
+      font-size: 0.875rem;
+      line-height: 1.12875rem;
+    }
   }
   p {
     margin-bottom: 1rem;
+    @include max-lg {
+      margin-bottom: 0.5rem;
+    }
     &:last-child {
       margin-bottom: 0;
     }
