@@ -1,0 +1,50 @@
+@import "../service/media-mixin.scss";
+
+.b-day-contacts {
+  padding-top: 2.5rem;
+  padding-bottom: 7.5rem;
+  @include max-lg {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  }
+  &__title {
+    margin-bottom: 3.125rem;
+    @include max-lg {
+      margin-bottom: 2rem;
+      h2 {
+        font-family: "TikTok", sans-serif;
+        font-weight: 600;
+        font-size: 2.75rem;
+        line-height: 2.3925rem;
+        letter-spacing: -0.05em;
+      }
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    font-family: "Golos", sans-serif;
+    font-weight: 500;
+    font-size: 1.75rem;
+    line-height: 2rem;
+    color: #1d1d20;
+    margin-bottom: 3.125rem;
+    @include max-lg {
+      font-size: 1.375rem;
+      line-height: 1.6225rem;
+      margin-bottom: 2rem;
+    }
+  }
+  &__map {
+    width: 100%;
+    height: 37.5rem;
+    background-color: #eee;
+    border-radius: 4rem;
+    overflow: hidden;
+    @include max-lg {
+      border-radius: 2rem;
+      height: 37.5rem;
+    }
+  }
+}

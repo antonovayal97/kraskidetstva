@@ -3,25 +3,62 @@
 .b-day-kafe {
   position: relative;
   padding: 5.5rem 0;
+  @include max-lg {
+    padding: 4rem 0;
+  }
   &__title {
     margin-bottom: 2rem;
+    h2 {
+      @include max-lg {
+        font-family: "TikTok", sans-serif;
+        font-weight: 630;
+        font-size: 2.75rem;
+        line-height: 2.3925rem;
+        letter-spacing: -0.08em;
+        color: #1d1d20;
+      }
+    }
   }
   .c-description {
     margin-bottom: 3.5rem;
+    @include max-lg {
+      margin-bottom: 2rem;
+    }
   }
   .c-title__arrows {
     margin-left: auto;
   }
   &__bg {
     position: absolute;
-    top: -2rem;
+    top: -2.4rem;
     right: -7.5rem;
-    width: 51.375rem;
+    width: 51.575rem;
     height: 57.3125rem;
+    z-index: -1;
+    @include max-lg {
+      display: none;
+    }
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+    &-mobile {
+      display: none;
+      position: absolute;
+      top: -3.45rem;
+      right: -1rem;
+      width: 13.7875rem;
+      height: 14.75rem;
+      z-index: -1;
+      @include max-lg {
+        display: block;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
   }
 }

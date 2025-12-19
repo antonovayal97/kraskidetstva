@@ -1,5 +1,10 @@
+@import "../service/media-mixin.scss";
+
 .faq {
   padding: 6.25rem 0;
+  @include max-lg {
+    padding: 2rem 0;
+  }
   &__title {
     margin-bottom: 3rem;
   }
@@ -12,6 +17,10 @@
     border-radius: 4rem;
     padding: 1.875rem 2.5rem;
     background-color: #fff;
+    @include max-lg {
+      padding: 1.5rem;
+      border-radius: 2.75rem;
+    }
     &-title {
       display: flex;
       justify-content: space-between;
@@ -19,9 +28,15 @@
       font-weight: 630;
       font-size: 3rem;
       line-height: 2.52rem;
-      letter-spacing: -0.04em;
+      letter-spacing: -0.067em;
       color: #1d1d20;
       cursor: pointer;
+      @include max-lg {
+        font-weight: 430;
+        font-size: 1.5rem;
+        line-height: 1.44rem;
+        letter-spacing: -0.03em;
+      }
     }
     &-icon {
       width: 3.5rem;
@@ -31,9 +46,18 @@
       background-color: #2b2d33;
       color: #fff;
       line-height: 0;
+      @include max-lg {
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: 0.5rem;
+      }
       .icon {
         width: 2rem;
         height: 2rem;
+        @include max-lg {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
       }
     }
     &-content {
@@ -44,6 +68,10 @@
       font-size: 1.5rem;
       line-height: 1.755rem;
       color: #2b2d33;
+      @include max-lg {
+        font-size: 0.875rem;
+        line-height: 1.12875rem;
+      }
     }
     &--active {
       .faq__block-content {

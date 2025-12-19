@@ -2,16 +2,35 @@
 
 .b-day-uslugi {
   position: relative;
-  padding-top: 6.25rem;
+  padding-top: 6.1rem;
   padding-bottom: 4rem;
+  @include max-lg {
+    margin-top: 10rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
   &__title {
     margin-bottom: 2rem;
+    @include max-lg {
+      margin-bottom: 1rem;
+    }
     h2 {
       color: #fff;
+      @include max-lg {
+        font-family: "TikTok", sans-serif;
+        font-weight: 600;
+        font-size: 2.75rem;
+        line-height: 2.3925rem;
+        letter-spacing: -0.05em;
+        color: #fff;
+      }
     }
   }
   .c-description {
     margin-bottom: 3rem;
+    @include max-lg {
+      margin-bottom: 2rem;
+    }
     * {
       color: #fff !important;
     }
@@ -22,9 +41,12 @@
     display: flex;
     justify-content: flex-end;
     margin-bottom: 2rem;
+    @include max-lg {
+      display: none;
+    }
   }
   &__slide {
-    margin: 0 -7rem;
+    margin: 0 -7.5rem;
     @include max-lg {
       margin: 0 -1rem;
     }
@@ -41,10 +63,16 @@
   &__personages {
     position: absolute;
     z-index: 0;
-    top: -5.625rem;
+    top: -5.8rem;
     right: -12.625rem;
     width: 65.75rem;
     height: 65.75rem;
+    @include max-lg {
+      width: 15.5rem;
+      height: 15.5rem;
+      top: -5rem;
+      right: -3.1875rem;
+    }
     img {
       width: 100%;
       height: 100%;
@@ -54,7 +82,7 @@
   &__image {
     position: absolute;
     z-index: -1;
-    top: -3.75rem;
+    top: -4.2rem;
     left: 50%;
     width: 100vw;
     transform: translate(-50%, 0%);
@@ -66,7 +94,7 @@
       display: none;
       position: absolute;
       z-index: -1;
-      top: 0;
+      top: -8rem;
       left: 50%;
       width: 100vw;
       transform: translate(-50%, 0%);

@@ -29,19 +29,19 @@
     font-family: "Golos", sans-serif;
     font-weight: 500;
     font-size: 1.5rem;
-    line-height: 1.75rem;
+    line-height: 1.755rem;
     color: #1d1d20;
     @include max-lg {
       padding: 0.5rem 0.75rem;
       font-size: 1rem;
-      line-height: 1.25rem;
+      line-height: 1.21rem;
     }
     &--active {
       background-color: #98e51c;
     }
   }
   &__slides {
-    margin: 0 -7rem;
+    margin: 0 -7.5rem;
     @include max-lg {
       margin: 0 -1rem;
     }

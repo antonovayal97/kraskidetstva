@@ -1,0 +1,23 @@
+@import "../service/media-mixin.scss";
+
+.b-day-prices {
+  padding: 5.5rem 0;
+  @include max-lg {
+    padding: 2rem 0;
+  }
+  &__title {
+    margin-bottom: 3rem;
+    @include max-lg {
+      margin-bottom: 2rem;
+    }
+    h2 {
+      @include max-lg {
+        font-family: "TikTok", sans-serif;
+        font-weight: 630;
+        font-size: 2.75rem;
+        line-height: 2.3925rem;
+        letter-spacing: -0.08em;
+      }
+    }
+  }
+}

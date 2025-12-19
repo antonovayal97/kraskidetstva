@@ -1,44 +1,97 @@
+@import "../service/media-mixin.scss";
+
 .b-day-gives {
   padding: 5.5rem 0;
+  @include max-lg {
+    padding: 2rem 0;
+  }
   &__title {
     margin-bottom: 3rem;
+    @include max-lg {
+      margin-bottom: 1.5rem;
+    }
+    h2 {
+      @include max-lg {
+        font-family: "TikTok", sans-serif;
+        font-weight: 630;
+        font-size: 2.75rem;
+        line-height: 2.3925rem;
+        letter-spacing: -0.07em;
+        color: #1d1d20;
+      }
+    }
   }
   &__cards {
     display: flex;
     gap: 0.5rem;
+    @include max-lg {
+      flex-direction: column;
+    }
   }
   &__card {
     position: relative;
     overflow: hidden;
     border-radius: 4rem;
-    padding: 2rem;
+    padding: 1.85rem;
     width: 34.625rem;
-    height: 24.125rem;
+    height: 23.99rem;
+    @include max-lg {
+      width: 100%;
+      height: 16rem;
+      border-radius: 3rem;
+      padding: 1.5rem;
+    }
     &--1 {
       background-color: #fbddea;
       border: 0.125rem solid #ffb4d4;
+      .b-day-gives__card-image {
+        width: 17.91rem;
+      }
     }
     &--2 {
       background-color: #c8ff70;
       border: 0.125rem solid #a6d934;
+      .b-day-gives__card-image {
+        width: 20.5rem;
+      }
     }
     &--3 {
       background-color: #caf4ff;
       border: 0.125rem solid #8cd3e6;
+      .b-day-gives__card-image {
+        width: 17rem;
+        right: 2.1rem;
+      }
     }
     &-title {
       font-family: "TikTok", sans-serif;
       font-weight: 630;
       font-size: 2.75rem;
-      line-height: 2.64rem;
-      letter-spacing: -0.04em;
+      line-height: 2.6rem;
+      letter-spacing: -0.056em;
+
       color: #1d1d20;
+      @include max-lg {
+        font-family: "TikTok", sans-serif;
+        font-weight: 530;
+        font-size: 2rem;
+        line-height: 1.92rem;
+        letter-spacing: -0.05em;
+        color: #1d1d20;
+      }
     }
     &-image {
       position: absolute;
       bottom: 0;
       right: 0;
       line-height: 0;
+      width: 17rem;
+      img {
+        width: 100%;
+      }
+      @include max-lg {
+        width: 10.5rem;
+      }
     }
     &-bg {
       position: absolute;
