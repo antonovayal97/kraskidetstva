@@ -87,7 +87,7 @@
       padding-bottom: 1.75rem;
       border-radius: 2rem;
       background-color: #fff;
-      border: none;
+      border: none !important;
     }
     &--1 {
       border: 2px solid #ff9446;
@@ -175,6 +175,7 @@
       @include max-lg {
         font-size: 2rem;
         line-height: 1.92rem;
+        letter-spacing: -0.08em;
       }
     }
     &-description {
@@ -187,7 +188,7 @@
       color: #1d1d20;
       @include max-lg {
         font-size: 0.875rem;
-        line-height: 1.12875rem;
+        line-height: 1.11775rem;
       }
     }
   }

@@ -96,7 +96,7 @@ body {
     color: #1d1d20;
     @include max-lg {
       font-size: 0.875rem;
-      line-height: 1.12875rem;
+      line-height: 1.12775rem;
     }
   }
   p {
@@ -202,7 +202,7 @@ form {
     line-height: 1.755rem;
     color: #999ead;
     @include max-lg {
-      padding: 1.5rem 2rem;
+      padding: 1.465rem 2rem;
       border-radius: 1.25rem;
       font-size: 1rem;
       line-height: 1.25rem;
