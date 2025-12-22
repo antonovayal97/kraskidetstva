@@ -5,7 +5,7 @@
   &__title {
     margin-bottom: 4rem;
     @include max-lg {
-      margin-bottom: 2rem;
+      margin-bottom: 1.9rem;
     }
   }
   &__slider {
@@ -55,6 +55,8 @@
       @include max-lg {
         width: 8rem;
         height: 8rem;
+        top: 1rem;
+        left: 1rem;
       }
       img {
         width: 100%;
@@ -142,6 +144,9 @@
       margin-top: 2rem;
       .button {
         width: 100%;
+        padding: 1.5rem;
+        line-height: 1.25rem;
+        letter-spacing: -0.05em;
       }
     }
   }

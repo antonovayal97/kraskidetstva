@@ -46,8 +46,10 @@ body {
     letter-spacing: -0.04em;
     color: #1d1d20;
     @include max-lg {
+      font-weight: 600;
       font-size: 2.75rem;
-      line-height: 2.375rem;
+      line-height: 2.41rem;
+      letter-spacing: -0.113em;
     }
   }
   &__arrows {
@@ -148,8 +150,8 @@ body {
     font-family: "TikTok", sans-serif;
     font-weight: 950;
     font-size: 1.75rem;
-    line-height: 1.75rem;
-    letter-spacing: -0.05em;
+    line-height: 1.25rem;
+    letter-spacing: -0.04em;
     text-transform: uppercase;
     border-radius: 1rem;
     @include max-lg {
@@ -163,7 +165,7 @@ body {
   &--solid {
     color: #1d1d20;
     background-color: #98e51c;
-    padding: 1.75rem 2rem;
+    padding: 2.25rem 2rem;
     @include max-lg {
       padding: 1.5rem;
     }
@@ -177,7 +179,7 @@ body {
     color: #1d1d20;
     border: 0.25rem solid #1d1d20;
     background-color: transparent;
-    padding: 1.75rem 1.75rem;
+    padding: 2rem 1.75rem;
     letter-spacing: -0.04em;
     @include max-lg {
       padding: 1.5rem;

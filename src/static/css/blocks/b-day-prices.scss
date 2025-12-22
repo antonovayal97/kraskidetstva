@@ -20,4 +20,22 @@
       }
     }
   }
+
+  @include max-lg {
+    .main-prices__card {
+      width: 100%;
+      border-radius: 3rem;
+      padding: 2rem 1.5rem;
+      gap: 1.999rem;
+      &-title {
+        font-size: 1.75rem;
+        line-height: 1.1625rem;
+      }
+      &-description {
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 1.12875rem;
+      }
+    }
+  }
 }
