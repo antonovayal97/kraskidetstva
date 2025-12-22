@@ -160,6 +160,9 @@
         letter-spacing: -0.05em;
         text-transform: uppercase;
         color: #1d1d20;
+        &:hover {
+          color: rgb(152, 229, 28);
+        }
         @include max-lg {
           font-size: 1.25rem;
           line-height: 100%;
