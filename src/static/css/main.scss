@@ -135,6 +135,7 @@ body {
 .c-social {
   display: block;
   line-height: 0;
+  border-radius: 10rem;
 }
 
 .accient-title {
@@ -210,6 +211,39 @@ form {
       line-height: 1.25rem;
     }
   }
+}
+
+.btn_shine {
+  position: relative;
+  text-decoration: none;
+  overflow: hidden;
+}
+.btn_shine:hover:after {
+  opacity: 1;
+  top: -110%;
+  left: 60%;
+  transition-property: left, top, opacity;
+  transition-duration: 1.3s, 1.3s, 0.18s;
+  transition-timing-function: ease;
+}
+
+.btn_shine::after {
+  content: "";
+  position: absolute;
+  top: -110%;
+  left: -210%;
+  width: 200%;
+  height: 200%;
+  opacity: 0;
+  transform: rotate(30deg);
+  background: rgba(255, 255, 255, 0.13);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.13) 0%,
+    rgba(255, 255, 255, 0.13) 77%,
+    rgba(255, 255, 255, 0.5) 92%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 
 @import "./chunk/header.scss";
