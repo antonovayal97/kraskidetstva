@@ -1,7 +1,3 @@
-:root {
-  scroll-behavior: auto;
-}
-
 @import "./service/fonts.scss";
 @import "./service/media-mixin.scss";
 @import "./service/reset.scss";
@@ -11,6 +7,7 @@ html {
   @include max-lg {
     font-size: calc(16 * 100vw / 375);
   }
+  scroll-behavior: smooth;
 }
 
 main {
@@ -70,10 +67,17 @@ body {
     transition: background-color 0.3s ease;
     &:hover {
       background-color: #98e51c;
+      @include max-lg {
+        background-color: #2b2d33;
+      }
     }
     .icon {
       width: 2.5rem;
       height: 2.5rem;
+    }
+    &.swiper-button-disabled {
+      background-color: #b7bbbe;
+      color: #fff;
     }
     &--prev {
     }
@@ -128,7 +132,7 @@ body {
     }
     .swiper-pagination-bullet-active {
       background: #2b2d33;
-      border: 1px solid #e6e6e6;
+      border: 0.0625rem solid #e6e6e6;
     }
   }
 }
@@ -173,6 +177,10 @@ body {
     &:hover {
       background-color: #1d1d20;
       color: #98e51c;
+      @include max-lg {
+        color: #1d1d20;
+        background-color: #98e51c;
+      }
     }
   }
 
@@ -189,6 +197,10 @@ body {
     &:hover {
       color: #fff;
       background-color: #1d1d20;
+      @include max-lg {
+        color: #1d1d20;
+        background-color: transparent;
+      }
     }
   }
 }

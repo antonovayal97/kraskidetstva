@@ -36,6 +36,9 @@
       letter-spacing: -0.067em;
       color: #1d1d20;
       cursor: pointer;
+
+      -webkit-tap-highlight-color: transparent; /* мобильные */
+      user-select: none;
       @include max-lg {
         font-weight: 430;
         font-size: 1.5rem;
@@ -66,13 +69,18 @@
       }
     }
     &-content {
-      display: none;
       padding-top: 1.5rem;
       font-family: "Golos", sans-serif;
       font-weight: 400;
       font-size: 1.5rem;
       line-height: 1.755rem;
       color: #2b2d33;
+
+      height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: height 0.4s ease, opacity 0.25s ease;
+
       @include max-lg {
         font-size: 0.875rem;
         line-height: 1.12875rem;
