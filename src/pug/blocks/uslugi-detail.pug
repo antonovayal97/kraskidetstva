@@ -1,0 +1,24 @@
+extends ../layout/app
+block title
+    | Детальная услуги
+block styles
+    link(rel="stylesheet", href="./css/blocks/b-day-form.min.css")
+    link(rel="stylesheet", href="./css/blocks/b-day-contacts.min.css")
+block script
+block page
+    include ../chunk/header
+    main
+        .breadcrumbs
+            .breadcrumbs__item
+                a(href="#") Главная
+            .breadcrumbs__slash
+                span /
+            .breadcrumbs__item
+                a(href="#")  Услуги парка
+            .breadcrumbs__slash
+                span /
+            .breadcrumbs__item
+                span Аквагрим и бьютизона
+        include ../blocks/b-day-form
+        include ../blocks/b-day-contacts
+    include ../chunk/footer
